@@ -1,5 +1,4 @@
 const User = require('../models/singnUpModel');
-const bcrypt = require('bcrypt');
 const { decrypt } = require('../utils/crypto');
 const { emailValidation, passwordValidation } = require('../utils/validations');
 const { sendResponse } = require('../utils/clientjsonmaker');
