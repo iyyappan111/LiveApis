@@ -4,6 +4,7 @@ const { nameValidation, emailValidation, mobileValidation, passwordValidation } 
 const { sendResponse } = require('../utils/clientjsonmaker');
 const signUp = async (req, res) => {
   try {
+    console.log(req.body)
     const { password, confirmPassword, firstName, lastName, email, mobile } = req.body;
 
     if (!firstName || !lastName || !email || !mobile || !password || !confirmPassword) {
